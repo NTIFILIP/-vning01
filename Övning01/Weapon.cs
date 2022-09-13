@@ -11,7 +11,7 @@ public class Weapon
         this.Damage = damage;
     }
 
-    public void Attack(Enemy enemy, int damage) {
+    public void Attack(Humanoid enemy, int damage) {
         enemy.TakeDamage(damage);
     }
 }

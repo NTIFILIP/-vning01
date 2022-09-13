@@ -1,15 +1,9 @@
-public class Player
+public class Player : Humanoid
 {
-    int health;
-    Weapon weapon;
-
-    public Player(int health, Weapon weapon) {
+    public Player(string name, int health, Weapon weapon) {
+        this.Name = name;
         this.health = health;
         this.weapon = weapon;
-    }
-
-    public void AttackEnemy(Enemy enemy) {
-        System.Console.WriteLine("Attack enemy");
-        this.weapon.Attack(enemy, this.weapon.Damage);
+        this.IsAlive = true;
     }
 }
